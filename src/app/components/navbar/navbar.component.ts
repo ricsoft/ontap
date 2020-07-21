@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { BrewersObj } from '../../models/brew.model';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+  @Input() brewers: BrewersObj;
+  @Output() brewerClicked: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit(): void {
+  handleBrewerClick(brewer): void {
+    this.brewerClicked.emit(brewer);
   }
-
 }

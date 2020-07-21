@@ -1,0 +1,6 @@
+<div>
+  <h1>{{ selectedBrewer.name }}</h1>
+  <div *ngFor="let data of brewData[selectedBrewer.index]">
+    {{ data.name }}
+  </div>
+</div>

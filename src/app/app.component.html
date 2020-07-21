@@ -1,4 +1,4 @@
-<div class="screen-height has-background-dark">
-  <app-navbar></app-navbar>
-  <p *ngIf="brewData">{{brewData.ID}}</p>
+<div class="height-screen has-background-dark has-text-light">
+  <app-navbar [brewers]="brewers" (brewerClicked)="brewerClicked($event)"></app-navbar>
+  <app-content [selectedBrewer]="selectedBrewer" [brewData]="this.brewData.Data"></app-content>
 </div>
