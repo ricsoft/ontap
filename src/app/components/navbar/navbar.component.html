@@ -1,6 +1,6 @@
-<div class="container columns is-mobile">
-  <div class="column" *ngFor="let brewer of brewers" (click)="handleBrewerClick(brewer)">
-    <figure class="image is-64x64">
+<div class="navbar-container">
+  <div class="navbar-items" *ngFor="let brewer of brewers" (click)="handleBrewerClick(brewer)">
+    <figure class="image is-64x64 container navbar-image">
       <img class="is-rounded" src={{brewer.imageUrl}}>
     </figure>
   </div>

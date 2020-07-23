@@ -9,4 +9,10 @@ import { BrewData, BrewersObj } from '../../models/brew.model';
 export class ContentComponent {
   @Input() selectedBrewer: BrewersObj;
   @Input() brewData: BrewData;
+
+  searchUrl = 'https://www.google.com/search?q=';
+
+  handleBeerClick(beerName): void {
+    window.open(this.searchUrl + this.selectedBrewer.name + ' ' + beerName, '_blank');
+  }
 }
