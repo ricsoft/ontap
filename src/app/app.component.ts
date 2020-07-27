@@ -54,6 +54,5 @@ export class AppComponent implements OnInit {
 
   brewerClicked(brewer): void {
     this.selectedBrewer = brewer;
-    // console.log(this.brewData.Data[this.selectedBrewer.index]);
   }
 }

@@ -1,7 +1,7 @@
 export interface BrewData {
-  ID: string;
-  Date: string;
-  Data: Array<any>;
+  id: string;
+  date: string;
+  data: Array<any>;
 }
 
 export interface BrewersObj {

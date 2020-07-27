@@ -21,12 +21,12 @@ export class DatabaseService {
 
     const params = {
       TableName: this.tableName,
-      KeyConditionExpression: '#ID = :ID',
+      KeyConditionExpression: '#id = :id',
       ExpressionAttributeNames: {
-        '#ID': 'ID'
+        '#id': 'id'
       },
       ExpressionAttributeValues: {
-        ':ID': this.rowName
+        ':id': this.rowName
       }
     };
 

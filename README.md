@@ -9,6 +9,7 @@ Beer on tap at various local breweries. Collected with Selenium and stored in Dy
 Angular, AWS-SDK, Bulma CSS
 
 ### Executing program
+Remove .sample from environments/environment.ts and provide Region and IdentityId info for AWS Cognito.
 ```
 ng serve
 ```

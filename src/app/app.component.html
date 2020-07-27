@@ -1,6 +1,6 @@
 <div class="has-text-light">
   <div class="width-screen height-screen is-background has-background-dark"></div>
   <app-navbar [brewers]="brewers" (brewerClicked)="brewerClicked($event)"></app-navbar>
-  <app-content [selectedBrewer]="selectedBrewer" [brewData]="brewData.Data"></app-content>
-  <app-footer [lastUpdated]="brewData.Date" ></app-footer>
+  <app-content [selectedBrewer]="selectedBrewer" [brewData]="brewData.data"></app-content>
+  <app-footer [lastUpdated]="brewData.date" ></app-footer>
 </div>
