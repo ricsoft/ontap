@@ -8,4 +8,5 @@ export interface BrewersObj {
   index: number;
   name: string;
   imageUrl: string;
+  isRounded: boolean;
 }

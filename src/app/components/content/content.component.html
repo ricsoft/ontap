@@ -1,4 +1,4 @@
-<div class="mt-3 has-min-height has-text-centered">
+<div class="mt-3 has-text-centered">
   <h1 class="mb-3 is-size-4 has-text-weight-bold">{{ selectedBrewer.name }}</h1>
   <p class="my-4 beer-name" *ngFor="let data of brewData[selectedBrewer.index]" (click)="handleBeerClick(data.name)">{{ data.name }}</p>
 </div>

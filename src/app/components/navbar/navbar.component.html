@@ -1,7 +1,7 @@
 <div class="navbar-container">
   <div class="navbar-items" *ngFor="let brewer of brewers" (click)="handleBrewerClick(brewer)">
     <figure class="image is-64x64 container navbar-image">
-      <img class="is-rounded" src={{brewer.imageUrl}}>
+      <img [ngClass]="{'is-rounded' : brewer.isRounded}" src={{brewer.imageUrl}}>
     </figure>
   </div>
 </div>

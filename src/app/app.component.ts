@@ -15,22 +15,32 @@ export class AppComponent implements OnInit {
     {
       index: 0,
       name: 'Yellow Dog',
-      imageUrl: 'https://yellowdogbeer.com/yellowpress/wp-content/uploads/2019/11/yellow-dog-brewing_home-page_collage-icon@2x.png'
+      imageUrl: 'https://yellowdogbeer.com/yellowpress/wp-content/uploads/2019/11/yellow-dog-brewing_home-page_collage-icon@2x.png',
+      isRounded: false
     },
     {
       index: 1,
       name: 'Moody Ales',
-      imageUrl: 'http://www.moodyales.com/img/social-logo.jpg'
+      imageUrl: 'http://www.moodyales.com/img/social-logo.jpg',
+      isRounded: false
     },
     {
       index: 2,
-      name: 'The Parkside',
-      imageUrl: 'https://www.theparksidebrewery.com/wp-content/themes/parkside/images/circle-logo.png'
+      name: 'Parkside',
+      imageUrl: 'https://www.theparksidebrewery.com/wp-content/themes/parkside/images/circle-logo.png',
+      isRounded: true
     },
     {
       index: 3,
       name: 'Twin Sails',
-      imageUrl: 'https://pbs.twimg.com/profile_images/813493559739359232/DhM6ZA8F_400x400.jpg'
+      imageUrl: 'https://pbs.twimg.com/profile_images/813493559739359232/DhM6ZA8F_200x200.jpg',
+      isRounded: true
+    },
+    {
+      index: 4,
+      name: 'Fraser Mills',
+      imageUrl: 'https://pbs.twimg.com/profile_images/921620804197957632/lztMFt4S_200x200.jpg',
+      isRounded: false
     }
   ];
 

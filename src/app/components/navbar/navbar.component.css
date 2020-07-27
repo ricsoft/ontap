@@ -1,21 +1,19 @@
 .navbar-container {
-  margin-bottom: 2rem;
   padding-top: 1.5rem;
+  padding-bottom: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: auto;
 }
 .navbar-items {
-  min-width: 5rem;
+  min-width: 8rem;
   flex: 1;
 }
 @media screen and (min-width: 768px) {
   .navbar-container {
-    margin-bottom: 3rem;
     padding-top: 3rem;
+    justify-content: center;
   }
   .navbar-items {
-    min-width: 7rem;
     flex: none;
   }
 }
